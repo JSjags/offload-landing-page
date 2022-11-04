@@ -1,0 +1,43 @@
+:root {
+  --inter: "Inter", sans-serif;
+  --titan: "Titan One", cursive;
+  --primary-color: #3131c9;
+  --secondary-color: #3131c9;
+  --white: #ffffff;
+  --gray: #484848;
+  --light-gray: #b1b1b1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--titan);
+  color: var(--primary-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40;
+  margin-top: 40;
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--inter);
+  color: var(--gray);
+  font-weight: 300;
+}
