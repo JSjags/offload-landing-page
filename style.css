@@ -14,11 +14,21 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./assets/background.png);
+ /* background: url(./assets/background.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100vw;
   height: 100vh;
+background-color: lightblue;
+position: relative;
+}
+img {
+width: 16;
+height: 9;
+position: absolute;
+top: 0,
+left: 0,
+object-fit: cover;
 }
 h1,
 h2,
