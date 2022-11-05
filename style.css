@@ -17,7 +17,7 @@ body {
   /* background: url(./assets/background.png);
   background-size: cover;
   background-repeat: no-repeat; */
-  width: 100w;
+  width: 100vw;
   height: 100vh;
   background-color: lightblue;
   position: relative;
