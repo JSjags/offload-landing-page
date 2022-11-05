@@ -17,10 +17,11 @@ body {
  /* background: url(./assets/background.png);
   background-size: cover;
   background-repeat: no-repeat; */
-  width: 100vw;
+  width: 100w;
   height: 100vh;
 background-color: lightblue;
 position: relative;
+overflow: hidden
 }
 img {
 width: 16;
@@ -43,6 +44,8 @@ header {
   padding: 40;
   margin-top: 40;
   font-size: 1.5rem;
+position: relative;
+z-index: 10;
 }
 p {
   font-size: 1.5rem;
@@ -50,4 +53,6 @@ p {
   font-family: var(--inter);
   color: var(--gray);
   font-weight: 300;
+position: relative;
+z-index: 10
 }
