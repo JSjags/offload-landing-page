@@ -19,7 +19,6 @@ body {
   background-repeat: no-repeat; */
   width: 100vw;
   height: 100vh;
-  background-color: lightblue;
   position: relative;
   overflow: hidden;
 }
