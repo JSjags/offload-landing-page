@@ -13,10 +13,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
   width: 100vw;
   height: 100vh;
-  background: url(./assets/background.svg), url(./assets/);
+  background: url(./assets/background.svg);
   background-size: 20vw;
   background-repeat: repeat;
 }
@@ -35,11 +41,19 @@ header {
   z-index: 10;
   height: clamp(0px, 10%, 150px);
   background-color: transparent;
+  overflow-x: hidden;
 }
 header img {
   width: fit-content;
   height: 100%;
   object-fit: contain;
+}
+.kite {
+  width: 8vw;
+  height: 8vw;
+  position: absolute;
+  top: 0;
+  right: 5vw;
 }
 p {
   font-size: 1.5rem;
@@ -97,9 +111,13 @@ p {
   padding: 0 10%;
   text-align: center;
   font-size: clamp(1.2rem, calc(1rem + 1vw), 2.5rem);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto clamp(20px, 5%, 40px);
   position: relative;
+}
+section {
+  width: 1;
 }
 .header::after {
   display: block;
@@ -220,6 +238,8 @@ p {
 }
 .download-box button:hover {
   scale: 1.1;
+  background-color: var(--white);
+  color: var(--primary-color);
   box-shadow: 0 5px 10px var(--light-gray);
 }
 footer {
