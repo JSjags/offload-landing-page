@@ -7,7 +7,6 @@
   --gray: #484848;
   --light-gray: #b1b1b1;
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +16,31 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: overlay;
+  scroll-behavior: smooth;
+
+  scrollbar-color: var(--primary-color) transparent;
+}
+body::-webkit-scrollbar {
+  appearance: none;
+  width: 6px;
+  height: 6px;
+}
+body::-webkit-scrollbar:hover {
+  appearance: none;
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb:vertical {
+  background: #3131c9;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+body::-webkit-scrollbar-track:vertical {
+  appearance: none;
+  background: rgba(0, 0, 0, 0);
+  width: 6px;
 }
 body {
   width: 100vw;
@@ -204,7 +227,7 @@ section {
   display: grid;
   gap: 20px;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   place-items: center;
   justify-items: center;
   align-content: center;
@@ -219,7 +242,7 @@ section {
   font-family: var(--inter);
   color: var(--white);
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 10px;
   text-align: center;
@@ -241,6 +264,10 @@ section {
   background-color: var(--white);
   color: var(--primary-color);
   box-shadow: 0 5px 10px var(--light-gray);
+}
+.download-box button span {
+  font-size: clamp(0.8em, calc(0.8em + 1%), 1em);
+  white-space: nowrap;
 }
 footer {
   padding: 20px;
