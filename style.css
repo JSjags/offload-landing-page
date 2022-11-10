@@ -222,6 +222,9 @@ section {
   background: #bababa;
   object-fit: cover;
 }
+a {
+  text-decoration: none;
+}
 .download-box {
   width: 50%;
   display: grid;
@@ -233,7 +236,7 @@ section {
   align-content: center;
   padding-top: 5%;
 }
-.download-box img {
+.download-box .download-phone {
   margin: 0 auto;
   display: block;
   width: 50%;
@@ -253,6 +256,7 @@ section {
   align-items: center;
   justify-content: center;
   transition: all 300ms ease-in-out;
+  width: 100%;
 }
 .download-box button img {
   width: 24px;
@@ -268,6 +272,23 @@ section {
 .download-box button span {
   font-size: clamp(0.8em, calc(0.8em + 1%), 1em);
   white-space: nowrap;
+}
+.btn-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-icon {
+  display: inline-block;
+  padding: 5px;
+}
+.notice {
+  color: var(--light-gray);
+  font-size: 0.75rem;
+  width: 100%;
+  font-family: var(--inter);
+  text-align: left;
+  display: flex;
 }
 footer {
   padding: 20px;
